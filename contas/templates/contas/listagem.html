@@ -14,7 +14,7 @@
             <li>
                 <a href="{% url 'url_update' transacao.id %}">
                     {{ transacao.descricao }} -
-                    {{ transacao.data }} -
+                    {{ transacao.data|date:"d/m/Y" }} -
                     {{ transacao.valor }} -
                     {{ transacao.categoria }}
                 </a>
